@@ -1,4 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+// next.config.js
 
-export default nextConfig;
+const nextConfig = {
+    experimental: {
+      appDir: true,
+      serverComponentsExternalPackages: ["mongoose"],
+    },
+  };
+  
+export default nextConfig
+  
